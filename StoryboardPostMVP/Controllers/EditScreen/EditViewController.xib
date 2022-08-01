@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditViewController" customModule="StoryboardPostMVP" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyText" destination="ydK-yu-o8r" id="fWf-WI-UN2"/>
+                <outlet property="titleText" destination="G1V-lU-USW" id="erI-nL-EFr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1V-lU-USW">
+                    <rect key="frame" x="20" y="74" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hIQ-Oy-JkK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydK-yu-o8r">
+                    <rect key="frame" x="20" y="144" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VwO-fn-bYg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4s-hl-CSP">
+                    <rect key="frame" x="120" y="244" width="174" height="60"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="eKI-wF-Buc"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Button">
+                                <attributes>
+                                    <font key="NSFont" size="20" name="Helvetica"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="editTapped:" destination="-1" eventType="touchUpInside" id="40Z-P0-mWP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="l4s-hl-CSP" firstAttribute="top" secondItem="ydK-yu-o8r" secondAttribute="bottom" constant="50" id="DBq-ek-Bi7"/>
+                <constraint firstItem="G1V-lU-USW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="HIu-2J-1FH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l4s-hl-CSP" secondAttribute="trailing" constant="120" id="PM2-fl-GGQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G1V-lU-USW" secondAttribute="trailing" constant="20" id="SJD-d8-K7G"/>
+                <constraint firstItem="l4s-hl-CSP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="TrM-mM-NXe"/>
+                <constraint firstItem="ydK-yu-o8r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="b7a-Dt-DO6"/>
+                <constraint firstItem="ydK-yu-o8r" firstAttribute="top" secondItem="G1V-lU-USW" secondAttribute="bottom" constant="20" id="kNy-0s-hlz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ydK-yu-o8r" secondAttribute="trailing" constant="20" id="yEN-JZ-6u6"/>
+                <constraint firstItem="G1V-lU-USW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="zne-2K-G1i"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
